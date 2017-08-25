@@ -10,11 +10,7 @@ namespace Aspose_Excel_AddIn.PdfConvert
         public void Convert()
         {
             ConvertToPdf XlsxToPdfAspose = new ConvertToPdf();
-
-            XlsxToPdfAspose.OpenedDocumentName = _currentWorkBook.Name;
-            XlsxToPdfAspose.OpenedDocumentPath = _currentWorkBook.Path;
-
-            XlsxToPdfAspose.ConvertXlsxToPdfWithAspose();
+            XlsxToPdfAspose.ConvertXlsxToPdfWithAspose(_currentWorkBook.Path, _currentWorkBook.Name);
         }
     }
 }

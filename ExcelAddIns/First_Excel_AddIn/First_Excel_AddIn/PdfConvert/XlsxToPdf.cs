@@ -10,10 +10,6 @@ namespace First_Excel_AddIn.PdfConvert
         public void Convert()
         {
             ConvertToPdf XlsxToPdf = new ConvertToPdf();
-
-            XlsxToPdf.OpenedDocumentName = _currentWorkBook.Name;
-            XlsxToPdf.OpenedDocumentPath = _currentWorkBook.Path;
-
             XlsxToPdf.ConvertXlsxToPdf(_currentWorkBook);
         }
     }

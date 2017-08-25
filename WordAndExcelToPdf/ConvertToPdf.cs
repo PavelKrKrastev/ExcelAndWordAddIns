@@ -16,16 +16,9 @@ namespace WordAndExcelToPdf
         private SaveFileDialog _saveDialog = new SaveFileDialog() { Filter = "PDF|*.pdf" };
         #endregion
 
-        #region Public properties
-        public string OpenedDocumentName { get; set; }
-        public string OpenedDocumentPath { get; set; }
-        #endregion
-
         #region Convert Excel Files To Pdf
         public void ConvertXlsxToPdf(Excel.Workbook CurrentWorkBook)
         {
-            SetDefaultPdfName();
-
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 _saveAsPdfPath = _saveDialog.FileName;
@@ -33,10 +26,8 @@ namespace WordAndExcelToPdf
             }
         }
 
-        public void ConvertXlsxToPdfWithAspose()
+        public void ConvertXlsxToPdfWithAspose(string OpenedDocumentPath, string OpenedDocumentName)
         {
-            SetDefaultPdfName();
-
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 using (FileStream docStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
@@ -54,8 +45,6 @@ namespace WordAndExcelToPdf
         #region Convert Word Files To Pdf
         public void ConvertDocToPdf(Word.Document CurrentWordDoc)
         {
-            SetDefaultPdfName();
-
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 _saveAsPdfPath = _saveDialog.FileName;
@@ -63,10 +52,8 @@ namespace WordAndExcelToPdf
             }
         }
 
-        public void ConvertDocToPdfWithAspose()
+        public void ConvertDocToPdfWithAspose(string OpenedDocumentPath, string OpenedDocumentName)
         {
-            SetDefaultPdfName();
-
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 using (FileStream docStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
@@ -78,10 +65,5 @@ namespace WordAndExcelToPdf
             }
         }
         #endregion
-
-        private void SetDefaultPdfName()
-        {
-            _saveDialog.FileName = Path.GetFileNameWithoutExtension(OpenedDocumentPath + "\\" + OpenedDocumentName) + "_PDF";
-        }
     }
 }

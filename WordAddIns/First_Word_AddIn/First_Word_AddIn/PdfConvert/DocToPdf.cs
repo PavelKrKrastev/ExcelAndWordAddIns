@@ -10,10 +10,6 @@ namespace First_Word_AddIn.PdfConvert
         public void convertToPdf()
         {
             ConvertToPdf DocToPdf = new ConvertToPdf();
-
-            DocToPdf.OpenedDocumentName = _currentWordDocument.Name;
-            DocToPdf.OpenedDocumentPath = _currentWordDocument.Path;
-
             DocToPdf.ConvertDocToPdf(_currentWordDocument);
         }
     }

@@ -11,11 +11,7 @@ namespace Words_AddIn_Aspose.PdfConvert
         public void convertToPdf()
         {
             ConvertToPdf DocToPdfAspose = new ConvertToPdf();
-
-            DocToPdfAspose.OpenedDocumentName = _currentWordDocument.Name;
-            DocToPdfAspose.OpenedDocumentPath = _currentWordDocument.Path;
-
-            DocToPdfAspose.ConvertDocToPdfWithAspose();
+            DocToPdfAspose.ConvertDocToPdfWithAspose(_currentWordDocument.Path, _currentWordDocument.Name);
             }
         }
     }
