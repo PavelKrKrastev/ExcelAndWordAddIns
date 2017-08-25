@@ -12,7 +12,7 @@ namespace Words_AddIn_Aspose.PdfConvert
         {
             ConvertToPdf DocToPdfAspose = new ConvertToPdf();
             DocToPdfAspose.ConvertDocToPdfWithAspose(_currentWordDocument.Path, _currentWordDocument.Name);
-            }
         }
     }
+}
 
