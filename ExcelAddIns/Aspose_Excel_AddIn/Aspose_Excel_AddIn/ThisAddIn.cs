@@ -1,5 +1,4 @@
-﻿
-namespace Aspose_Excel_AddIn
+﻿namespace Aspose_Excel_AddIn
 {
     public partial class ThisAddIn
     {

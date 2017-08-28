@@ -1,5 +1,4 @@
-﻿
-namespace First_Word_AddIn
+﻿namespace First_Word_AddIn
 {
     public partial class ThisAddIn
     {

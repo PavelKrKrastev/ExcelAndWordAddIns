@@ -1,5 +1,4 @@
-﻿
-namespace Words_AddIn_Aspose
+﻿namespace Words_AddIn_Aspose
 {
     public partial class ThisAddIn
     {
