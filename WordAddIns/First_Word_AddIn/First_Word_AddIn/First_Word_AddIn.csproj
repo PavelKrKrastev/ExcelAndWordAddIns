@@ -210,8 +210,17 @@
     <ManifestKeyFile>First_Word_AddIn_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>3C1C51B1AF17688B0C718E688F0C18618895929D</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>C728AAA178652B92CC7C3FF7C719AA868EACAD5D</ManifestCertificateThumbprint>
   </PropertyGroup>
+  <!-- <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>First_Word_AddIn_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup> 
+    <ManifestCertificateThumbprint>3C1C51B1AF17688B0C718E688F0C18618895929D</ManifestCertificateThumbprint>
+  </PropertyGroup> -->
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Include additional build rules for an Office application add-in. -->
