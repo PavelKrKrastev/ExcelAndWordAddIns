@@ -1,5 +1,7 @@
 ﻿using Microsoft.Office.Tools.Ribbon;
-using Aspose_Excel_AddIn.PdfConvert;
+using Excel = Microsoft.Office.Interop.Excel;
+using WordAndExcelToPdf;
+
 
 namespace Aspose_Excel_AddIn
 {
@@ -12,8 +14,9 @@ namespace Aspose_Excel_AddIn
 
         private void button1_Click(object sender, RibbonControlEventArgs e)
         {
-            XlsxToPdfWithAspose convertToPdf = new XlsxToPdfWithAspose();
-            convertToPdf.Convert();
+            Excel.Workbook _currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
+            PdfCoverter XlsxToPdfAspose = new PdfCoverter();
+            XlsxToPdfAspose.ConvertXlsxToPdfWithAspose(_currentWorkBook.Path, _currentWorkBook.Name);
         }
     }
 }

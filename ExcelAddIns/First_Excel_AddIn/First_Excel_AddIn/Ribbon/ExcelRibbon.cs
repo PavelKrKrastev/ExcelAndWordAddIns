@@ -1,5 +1,6 @@
 ﻿using Microsoft.Office.Tools.Ribbon;
-using First_Excel_AddIn.PdfConvert; 
+using Excel = Microsoft.Office.Interop.Excel;
+using WordAndExcelToPdf;
 
 namespace First_Excel_AddIn
 {
@@ -12,8 +13,9 @@ namespace First_Excel_AddIn
 
         private void btnConvert_Click(object sender, RibbonControlEventArgs e)
         {
-            XlsxToPdf pdfConvert = new XlsxToPdf();
-            pdfConvert.Convert();
+            Excel.Workbook _currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
+            PdfCoverter XlsxToPdf = new PdfCoverter();
+            XlsxToPdf.ConvertXlsxToPdf(_currentWorkBook);
         }
     }
 }

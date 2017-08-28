@@ -1,20 +1,19 @@
-﻿using System.Windows.Forms;
+﻿using Microsoft.Office.Interop.Excel;
 using System.IO;
-using Microsoft.Office.Interop.Excel;
+using System.Windows.Forms;
+using Cells = Aspose.Cells;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
-using Aspose.Cells;
-using Cells = Aspose.Cells;
 using Words = Aspose.Words;
 
 namespace WordAndExcelToPdf
 {
-    public class ConvertToPdf
+    public class PdfCoverter
     {
-        #region Private properties
+        #region Private Properties
         private string _saveAsPdfPath { get; set; }
         private SaveFileDialog _saveDialog = new SaveFileDialog() { Filter = "PDF|*.pdf" };
-        #endregion
+        #endregion Private Properties
 
         #region Convert Excel Files To Pdf
         public void ConvertXlsxToPdf(Excel.Workbook CurrentWorkBook)
@@ -33,14 +32,14 @@ namespace WordAndExcelToPdf
                 using (FileStream docStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
                     Cells.Workbook AsposeWorkbook = new Cells.Workbook(docStream);
-                    PdfSaveOptions SaveOptions = new PdfSaveOptions(Aspose.Cells.SaveFormat.Pdf);
+                    Cells.PdfSaveOptions SaveOptions = new Cells.PdfSaveOptions(Aspose.Cells.SaveFormat.Pdf);
                     SaveOptions.AllColumnsInOnePagePerSheet = true;
                     _saveAsPdfPath = _saveDialog.FileName;
                     AsposeWorkbook.Save(_saveAsPdfPath, SaveOptions);
                 }
             }
         }
-        #endregion
+        #endregion Convert Excel Files To Pdf
 
         #region Convert Word Files To Pdf
         public void ConvertDocToPdf(Word.Document CurrentWordDoc)
@@ -64,6 +63,6 @@ namespace WordAndExcelToPdf
                 }
             }
         }
-        #endregion
+        #endregion Convert Word Files To Pdf
     }
 }

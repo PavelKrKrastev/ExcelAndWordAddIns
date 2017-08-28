@@ -1,4 +1,5 @@
-﻿using First_Word_AddIn.PdfConvert;
+﻿using Word = Microsoft.Office.Interop.Word;
+using WordAndExcelToPdf;
 using Microsoft.Office.Tools.Ribbon;
 
 namespace First_Word_AddIn
@@ -12,8 +13,9 @@ namespace First_Word_AddIn
 
         private void btn_Save_Pdf(object sender, RibbonControlEventArgs e)
         {
-            DocToPdf pdfConvert = new DocToPdf();
-            pdfConvert.convertToPdf();
+            Word.Document _currentWordDocument = Globals.ThisAddIn.Application.ActiveDocument;
+            PdfCoverter DocToPdf = new PdfCoverter();
+            DocToPdf.ConvertDocToPdf(_currentWordDocument);
         }
     }
 }
