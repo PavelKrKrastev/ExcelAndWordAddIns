@@ -8,7 +8,7 @@ using Words = Aspose.Words;
 
 namespace WordAndExcelToPdf
 {
-    public class PdfCoverter
+    public class PdfConverter
     {
         #region Private Properties
         private string _saveAsPdfPath { get; set; }

@@ -15,7 +15,7 @@ namespace Aspose_Excel_AddIn
         private void button1_Click(object sender, RibbonControlEventArgs e)
         {
             Excel.Workbook _currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
-            PdfCoverter XlsxToPdfAspose = new PdfCoverter();
+            PdfConverter XlsxToPdfAspose = new PdfConverter();
             XlsxToPdfAspose.ConvertXlsxToPdfWithAspose(_currentWorkBook.Path, _currentWorkBook.Name);
         }
     }

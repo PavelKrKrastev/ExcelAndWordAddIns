@@ -14,7 +14,7 @@ namespace First_Word_AddIn
         private void btn_Save_Pdf(object sender, RibbonControlEventArgs e)
         {
             Word.Document _currentWordDocument = Globals.ThisAddIn.Application.ActiveDocument;
-            PdfCoverter DocToPdf = new PdfCoverter();
+            PdfConverter DocToPdf = new PdfConverter();
             DocToPdf.ConvertDocToPdf(_currentWordDocument);
         }
     }

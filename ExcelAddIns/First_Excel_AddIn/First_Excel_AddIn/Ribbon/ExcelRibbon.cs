@@ -14,7 +14,7 @@ namespace First_Excel_AddIn
         private void btnConvert_Click(object sender, RibbonControlEventArgs e)
         {
             Excel.Workbook _currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
-            PdfCoverter XlsxToPdf = new PdfCoverter();
+            PdfConverter XlsxToPdf = new PdfConverter();
             XlsxToPdf.ConvertXlsxToPdf(_currentWorkBook);
         }
     }

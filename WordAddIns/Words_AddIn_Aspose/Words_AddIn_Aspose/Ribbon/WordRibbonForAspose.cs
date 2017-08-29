@@ -14,7 +14,7 @@ namespace Words_AddIn_Aspose
         private void btnConvert_Click(object sender, RibbonControlEventArgs e)
         {
             Word.Document _currentWordDocument = Globals.ThisAddIn.Application.ActiveDocument;
-            PdfCoverter DocToPdfAspose = new PdfCoverter();
+            PdfConverter DocToPdfAspose = new PdfConverter();
             DocToPdfAspose.ConvertDocToPdfWithAspose(_currentWordDocument.Path, _currentWordDocument.Name);
         }
     }

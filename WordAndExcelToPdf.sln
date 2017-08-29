@@ -5,11 +5,11 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAndExcelToPdf", "WordAndExcelToPdf\WordAndExcelToPdf.csproj", "{CAACD8C0-970F-4365-B27E-D96C134D851B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExcelAddIns", "ExcelAddIns", "{7DEBF07C-DC0E-4E63-91DC-A5F77BDBAF92}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Excel Add Ins", "Excel Add Ins", "{7DEBF07C-DC0E-4E63-91DC-A5F77BDBAF92}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WordAddIns", "WordAddIns", "{8EA29C3F-978E-476A-9044-913ABC5AC17B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Word Add Ins", "Word Add Ins", "{8EA29C3F-978E-476A-9044-913ABC5AC17B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocAndXlsxToPdfConverter", "DocAndXlsxToPdfConverter", "{B1EF7E66-64EB-4198-BAD8-107892B9BA67}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Converter", "Converter", "{B1EF7E66-64EB-4198-BAD8-107892B9BA67}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose_Excel_AddIn", "ExcelAddIns\Aspose_Excel_AddIn\Aspose_Excel_AddIn\Aspose_Excel_AddIn.csproj", "{590B36B9-B5AF-422D-89E8-58C373ED44A9}"
 EndProject
