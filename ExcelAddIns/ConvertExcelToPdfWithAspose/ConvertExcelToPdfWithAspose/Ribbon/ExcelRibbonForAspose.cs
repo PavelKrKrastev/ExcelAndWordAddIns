@@ -5,7 +5,7 @@ using WordAndExcelConverter;
 
 namespace ConvertExcelToPdfWithAspose
 {
-    public partial class AsposeExcelRibbon
+    public partial class AsposeConvertRibbon
     {
         private void AsposeExcelRibbon_Load(object sender, RibbonUIEventArgs e)
         {

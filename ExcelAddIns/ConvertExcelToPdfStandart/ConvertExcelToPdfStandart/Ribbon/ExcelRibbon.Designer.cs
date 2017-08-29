@@ -1,13 +1,13 @@
 ﻿namespace ConvertExcelToPdfStandart
 {
-    partial class ConverRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
+    partial class ConvertRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        public ConverRibbon()
+        public ConvertRibbon()
             : base(Globals.Factory.GetRibbonFactory())
         {
             InitializeComponent();
@@ -62,9 +62,9 @@
             this.btnConvert.ShowImage = true;
             this.btnConvert.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnConvert_Click);
             // 
-            // ConverRibbon
+            // ConvertRibbon
             // 
-            this.Name = "ConverRibbon";
+            this.Name = "ConvertRibbon";
             this.RibbonType = "Microsoft.Excel.Workbook";
             this.Tabs.Add(this.tab1);
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.ConverRibbon_Load);
@@ -84,9 +84,9 @@
 
     partial class ThisRibbonCollection
     {
-        internal ConverRibbon ConverRibbon
+        internal ConvertRibbon ConverRibbon
         {
-            get { return this.GetRibbon<ConverRibbon>(); }
+            get { return this.GetRibbon<ConvertRibbon>(); }
         }
     }
 }

@@ -1,13 +1,13 @@
 ﻿namespace ConvertWordToPdfStandart
 {
-    partial class ExportRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
+    partial class ConvertRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        public ExportRibbon()
+        public ConvertRibbon()
             : base(Globals.Factory.GetRibbonFactory())
         {
             InitializeComponent();
@@ -62,9 +62,9 @@
             this.btnSave.ShowImage = true;
             this.btnSave.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btn_Save_Pdf);
             // 
-            // ExportRibbon
+            // ConvertRibbon
             // 
-            this.Name = "ExportRibbon";
+            this.Name = "ConvertRibbon";
             this.RibbonType = "Microsoft.Word.Document";
             this.Tabs.Add(this.tab1);
             this.Tag = "Export";
@@ -85,9 +85,9 @@
 
     partial class ThisRibbonCollection
     {
-        internal ExportRibbon ExportRibbon
+        internal ConvertRibbon ExportRibbon
         {
-            get { return this.GetRibbon<ExportRibbon>(); }
+            get { return this.GetRibbon<ConvertRibbon>(); }
         }
     }
 }

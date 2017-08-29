@@ -4,7 +4,7 @@ using WordAndExcelConverter;
 
 namespace ConvertExcelToPdfStandart
 {
-    public partial class ConverRibbon
+    public partial class ConvertRibbon
     {
         private void ConverRibbon_Load(object sender, RibbonUIEventArgs e)
         {

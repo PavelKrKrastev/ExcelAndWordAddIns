@@ -4,7 +4,7 @@ using Microsoft.Office.Tools.Ribbon;
 
 namespace ConvertWordToPdfStandart
 {
-    public partial class ExportRibbon
+    public partial class ConvertRibbon
     {
         private void ExportRibbon_Load(object sender, RibbonUIEventArgs e)
         {

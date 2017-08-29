@@ -152,7 +152,9 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="Ribbon\WordRibbon.cs" />
+    <Compile Include="Ribbon\WordRibbon.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Ribbon\WordRibbon.Designer.cs">
       <DependentUpon>WordRibbon.cs</DependentUpon>
     </Compile>

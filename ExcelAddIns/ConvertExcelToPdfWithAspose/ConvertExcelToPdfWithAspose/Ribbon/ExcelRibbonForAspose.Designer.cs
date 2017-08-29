@@ -1,13 +1,13 @@
 ﻿namespace ConvertExcelToPdfWithAspose
 {
-    partial class AsposeExcelRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
+    partial class AsposeConvertRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        public AsposeExcelRibbon()
+        public AsposeConvertRibbon()
             : base(Globals.Factory.GetRibbonFactory())
         {
             InitializeComponent();
@@ -62,9 +62,9 @@
             this.button1.ShowImage = true;
             this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
             // 
-            // AsposeExcelRibbon
+            // AsposeConvertRibbon
             // 
-            this.Name = "AsposeExcelRibbon";
+            this.Name = "AsposeConvertRibbon";
             this.RibbonType = "Microsoft.Excel.Workbook";
             this.Tabs.Add(this.tab1);
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.AsposeExcelRibbon_Load);
@@ -84,9 +84,9 @@
 
     partial class ThisRibbonCollection
     {
-        internal AsposeExcelRibbon AsposeExcelRibbon
+        internal AsposeConvertRibbon AsposeExcelRibbon
         {
-            get { return this.GetRibbon<AsposeExcelRibbon>(); }
+            get { return this.GetRibbon<AsposeConvertRibbon>(); }
         }
     }
 }
