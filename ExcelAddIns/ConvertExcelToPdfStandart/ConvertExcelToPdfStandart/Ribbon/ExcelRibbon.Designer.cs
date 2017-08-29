@@ -1,4 +1,4 @@
-﻿namespace First_Excel_AddIn
+﻿namespace ConvertExcelToPdfStandart
 {
     partial class ConverRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {

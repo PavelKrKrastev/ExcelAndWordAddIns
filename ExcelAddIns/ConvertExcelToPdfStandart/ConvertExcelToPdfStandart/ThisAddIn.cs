@@ -1,4 +1,4 @@
-﻿namespace First_Excel_AddIn
+﻿namespace ConvertExcelToPdfStandart
 {
     public partial class ThisAddIn
     {

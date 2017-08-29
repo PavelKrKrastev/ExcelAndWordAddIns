@@ -1,4 +1,4 @@
-﻿namespace First_Word_AddIn
+﻿namespace ConvertWordToPdfStandart
 {
     public partial class ThisAddIn
     {

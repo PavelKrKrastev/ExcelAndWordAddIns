@@ -1,4 +1,4 @@
-﻿namespace First_Word_AddIn
+﻿namespace ConvertWordToPdfStandart
 {
     partial class ExportRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {

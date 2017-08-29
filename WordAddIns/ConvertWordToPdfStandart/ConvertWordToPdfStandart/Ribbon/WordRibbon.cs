@@ -1,8 +1,8 @@
 ﻿using Word = Microsoft.Office.Interop.Word;
-using WordAndExcelToPdf;
+using WordAndExcelConverter;
 using Microsoft.Office.Tools.Ribbon;
 
-namespace First_Word_AddIn
+namespace ConvertWordToPdfStandart
 {
     public partial class ExportRibbon
     {

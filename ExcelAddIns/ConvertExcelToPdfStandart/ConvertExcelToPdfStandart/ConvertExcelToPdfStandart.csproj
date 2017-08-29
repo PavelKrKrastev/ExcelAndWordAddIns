@@ -194,9 +194,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\WordAndExcelToPdf\WordAndExcelToPdf.csproj">
+    <ProjectReference Include="..\..\..\WordAndExcelConverter\WordAndExcelConverter.csproj">
       <Project>{caacd8c0-970f-4365-b27e-d96c134d851b}</Project>
-      <Name>WordAndExcelToPdf</Name>
+      <Name>WordAndExcelConverter</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

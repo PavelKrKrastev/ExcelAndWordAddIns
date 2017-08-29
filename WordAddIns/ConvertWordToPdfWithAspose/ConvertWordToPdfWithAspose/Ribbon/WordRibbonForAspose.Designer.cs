@@ -1,4 +1,4 @@
-﻿namespace Words_AddIn_Aspose
+﻿namespace ConvertWordToPdfWithAspose
 {
     partial class AsposeWordRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {

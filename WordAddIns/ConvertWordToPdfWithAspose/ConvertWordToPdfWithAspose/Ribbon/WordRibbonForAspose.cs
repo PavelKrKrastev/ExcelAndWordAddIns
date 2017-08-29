@@ -1,8 +1,8 @@
 ﻿using Microsoft.Office.Tools.Ribbon;
 using Word = Microsoft.Office.Interop.Word;
-using WordAndExcelToPdf;
+using WordAndExcelConverter;
 
-namespace Words_AddIn_Aspose
+namespace ConvertWordToPdfWithAspose
 {
     public partial class AsposeWordRibbon
     {

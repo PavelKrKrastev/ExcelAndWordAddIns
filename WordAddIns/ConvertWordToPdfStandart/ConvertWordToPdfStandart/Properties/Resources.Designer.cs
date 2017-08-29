@@ -8,7 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace First_Word_AddIn.Properties {
+namespace ConvertWordToPdfStandart.Properties
+{
     
     
     /// <summary>

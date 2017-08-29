@@ -9,7 +9,8 @@
 //------------------------------------------------------------------------------
 
 #pragma warning disable 414
-namespace First_Excel_AddIn {
+namespace ConvertExcelToPdfStandart
+{
     
     
     /// 

@@ -7,8 +7,8 @@
     <ProjectGuid>{CAACD8C0-970F-4365-B27E-D96C134D851B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WordAndExcelToPdf</RootNamespace>
-    <AssemblyName>WordAndExcelToPdf</AssemblyName>
+    <RootNamespace>WordAndExcelConverter</RootNamespace>
+    <AssemblyName>WordAndExcelConverter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

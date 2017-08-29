@@ -1,4 +1,4 @@
-﻿namespace Aspose_Excel_AddIn
+﻿namespace ConvertExcelToPdfWithAspose
 {
     public partial class ThisAddIn
     {

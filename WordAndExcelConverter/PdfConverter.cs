@@ -6,7 +6,7 @@ using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
 using Words = Aspose.Words;
 
-namespace WordAndExcelToPdf
+namespace WordAndExcelConverter
 {
     public class PdfConverter
     {

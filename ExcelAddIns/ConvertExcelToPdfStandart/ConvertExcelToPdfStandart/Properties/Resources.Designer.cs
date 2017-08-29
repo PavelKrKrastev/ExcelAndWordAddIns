@@ -8,7 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace First_Excel_AddIn.Properties {
+namespace ConvertExcelToPdfStandart.Properties
+{
     
     
     /// <summary>

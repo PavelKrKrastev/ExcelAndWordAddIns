@@ -9,7 +9,8 @@
 //------------------------------------------------------------------------------
 
 #pragma warning disable 414
-namespace Aspose_Excel_AddIn {
+namespace ConvertExcelToPdfWithAspose
+{
     
     
     /// 

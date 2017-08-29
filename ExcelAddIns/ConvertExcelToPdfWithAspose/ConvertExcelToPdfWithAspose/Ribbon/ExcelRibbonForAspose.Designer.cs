@@ -1,4 +1,4 @@
-﻿namespace Aspose_Excel_AddIn
+﻿namespace ConvertExcelToPdfWithAspose
 {
     partial class AsposeExcelRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {

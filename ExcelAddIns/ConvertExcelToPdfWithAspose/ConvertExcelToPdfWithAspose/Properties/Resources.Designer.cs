@@ -8,7 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aspose_Excel_AddIn.Properties {
+namespace ConvertExcelToPdfWithAspose.Properties
+{
     
     
     /// <summary>

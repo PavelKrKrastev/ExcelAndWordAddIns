@@ -1,4 +1,4 @@
-﻿namespace Words_AddIn_Aspose
+﻿namespace ConvertWordToPdfWithAspose
 {
     public partial class ThisAddIn
     {
