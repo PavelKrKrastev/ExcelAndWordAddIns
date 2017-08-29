@@ -203,24 +203,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignManifests>true</SignManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>Aspose_Excel_AddIn_TemporaryKey.pfx</ManifestKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestCertificateThumbprint>AF24FF3106E2D169B3AB8DF94D335499B4E2AD67</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <!-- <PropertyGroup>
-    <SignManifests>true</SignManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>Aspose_Excel_AddIn_TemporaryKey.pfx</ManifestKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestCertificateThumbprint>9C6645AF379A8D38AC0F834F4F1A51AFAC70D850</ManifestCertificateThumbprint>
-  </PropertyGroup> -->
+ 
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Include additional build rules for an Office application add-in. -->
