@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose_Excel_AddIn", "Aspose_Excel_AddIn\Aspose_Excel_AddIn.csproj", "{590B36B9-B5AF-422D-89E8-58C373ED44A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertExcelToPdfWithAspose", "ConvertExcelToPdfWithAspose\ConvertExcelToPdfWithAspose.csproj", "{590B36B9-B5AF-422D-89E8-58C373ED44A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

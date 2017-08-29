@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Word Add Ins", "Word Add In
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Converter", "Converter", "{B1EF7E66-64EB-4198-BAD8-107892B9BA67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose_Excel_AddIn", "ExcelAddIns\Aspose_Excel_AddIn\Aspose_Excel_AddIn\Aspose_Excel_AddIn.csproj", "{590B36B9-B5AF-422D-89E8-58C373ED44A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertExcelToPdfWithAspose", "ExcelAddIns\ConvertExcelToPdfWithAspose\ConvertExcelToPdfWithAspose\ConvertExcelToPdfWithAspose.csproj", "{590B36B9-B5AF-422D-89E8-58C373ED44A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First_Excel_AddIn", "ExcelAddIns\First_Excel_AddIn\First_Excel_AddIn\First_Excel_AddIn.csproj", "{0DC553BC-FA83-4F32-B136-934569DC78AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertExcelToPdfStandart", "ExcelAddIns\ConvertExcelToPdfStandart\ConvertExcelToPdfStandart\ConvertExcelToPdfStandart.csproj", "{0DC553BC-FA83-4F32-B136-934569DC78AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First_Word_AddIn", "WordAddIns\First_Word_AddIn\First_Word_AddIn\First_Word_AddIn.csproj", "{FD0FC593-329F-48CD-9FA4-CDB1D79066D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertWordToPdfStandart", "WordAddIns\ConvertWordToPdfStandart\ConvertWordToPdfStandart\ConvertWordToPdfStandart.csproj", "{FD0FC593-329F-48CD-9FA4-CDB1D79066D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Words_AddIn_Aspose", "WordAddIns\Words_AddIn_Aspose\Words_AddIn_Aspose\Words_AddIn_Aspose.csproj", "{DBCBBD51-1EFF-48A3-82C3-D7D537AB44A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertWordToPdfWithAspose", "WordAddIns\ConvertWordToPdfWithAspose\ConvertWordToPdfWithAspose\ConvertWordToPdfWithAspose.csproj", "{DBCBBD51-1EFF-48A3-82C3-D7D537AB44A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
