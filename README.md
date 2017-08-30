@@ -1,1 +1,1 @@
-# Excel and Word add ins for converting current documents to Pdf
+# Excel and Word add ins for converting documents to Pdf
