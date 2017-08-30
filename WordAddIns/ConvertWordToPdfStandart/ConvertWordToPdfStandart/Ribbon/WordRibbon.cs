@@ -15,7 +15,7 @@ namespace ConvertWordToPdfStandart
         {
             Word.Document _currentWordDocument = Globals.ThisAddIn.Application.ActiveDocument;
             PdfConverter DocToPdf = new PdfConverter();
-            DocToPdf.ConvertDocToPdf(_currentWordDocument);
+            DocToPdf.ConvertDocxToPdf(_currentWordDocument);
         }
     }
 }

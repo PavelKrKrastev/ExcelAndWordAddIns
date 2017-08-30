@@ -16,12 +16,12 @@ namespace WordAndExcelConverter
         #endregion Private Properties
 
         #region Convert Excel Files To Pdf
-        public void ConvertXlsxToPdf(Excel.Workbook CurrentWorkBook)
+        public void ConvertXlsxToPdf(Excel.Workbook CurrentExcelWorkBook)
         {
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 _saveAsPdfPath = _saveDialog.FileName;
-                CurrentWorkBook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, _saveAsPdfPath);
+                CurrentExcelWorkBook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, _saveAsPdfPath);
             }
         }
 
@@ -29,9 +29,9 @@ namespace WordAndExcelConverter
         {
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
-                using (FileStream docStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                using (FileStream OpenedDocumentStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
-                    Cells.Workbook AsposeWorkbook = new Cells.Workbook(docStream);
+                    Cells.Workbook AsposeWorkbook = new Cells.Workbook(OpenedDocumentStream);
                     Cells.PdfSaveOptions SaveOptions = new Cells.PdfSaveOptions(Aspose.Cells.SaveFormat.Pdf);
                     SaveOptions.AllColumnsInOnePagePerSheet = true;
                     _saveAsPdfPath = _saveDialog.FileName;
@@ -42,22 +42,22 @@ namespace WordAndExcelConverter
         #endregion Convert Excel Files To Pdf
 
         #region Convert Word Files To Pdf
-        public void ConvertDocToPdf(Word.Document CurrentWordDoc)
+        public void ConvertDocxToPdf(Word.Document CurrentWordDocument)
         {
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 _saveAsPdfPath = _saveDialog.FileName;
-                CurrentWordDoc.ExportAsFixedFormat(_saveAsPdfPath, Word.WdExportFormat.wdExportFormatPDF);
+                CurrentWordDocument.ExportAsFixedFormat(_saveAsPdfPath, Word.WdExportFormat.wdExportFormatPDF);
             }
         }
 
-        public void ConvertDocToPdfWithAspose(string OpenedDocumentPath, string OpenedDocumentName)
+        public void ConvertDocxToPdfWithAspose(string OpenedDocumentPath, string OpenedDocumentName)
         {
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
-                using (FileStream docStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                using (FileStream OpenedDocumentStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
-                    Words.Document WordDocument = new Words.Document(docStream);
+                    Words.Document WordDocument = new Words.Document(OpenedDocumentStream);
                     _saveAsPdfPath = _saveDialog.FileName;
                     WordDocument.Save(_saveAsPdfPath, Aspose.Words.SaveFormat.Pdf);
                 }
