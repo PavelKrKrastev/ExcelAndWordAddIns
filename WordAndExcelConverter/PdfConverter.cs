@@ -72,9 +72,11 @@ namespace WordAndExcelConverter
         }
         #endregion Convert Word Files To Pdf
 
+        #region Pdf default name
         private void GetDefaultPdfNameForAspose(string OpenedDocumentPath, string OpenedDocumentName)
         {
             _saveDialog.FileName = Path.GetFileNameWithoutExtension(OpenedDocumentPath + "\\" + OpenedDocumentName) + "_AsposePDF";
         }
+        #endregion Pdf default name
     }
 }
