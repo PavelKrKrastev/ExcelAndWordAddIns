@@ -1,5 +1,4 @@
-﻿using Microsoft.Office.Interop.Excel;
-using System.IO;
+﻿using System.IO;
 using System.Windows.Forms;
 using Cells = Aspose.Cells;
 using Excel = Microsoft.Office.Interop.Excel;
@@ -18,15 +17,19 @@ namespace WordAndExcelConverter
         #region Convert Excel Files To Pdf
         public void ConvertXlsxToPdf(Excel.Workbook CurrentExcelWorkBook)
         {
+            _saveDialog.FileName = Path.GetFileNameWithoutExtension(CurrentExcelWorkBook.Path + "\\" + CurrentExcelWorkBook.Name) + "_PDF";
+
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 _saveAsPdfPath = _saveDialog.FileName;
-                CurrentExcelWorkBook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, _saveAsPdfPath);
+                CurrentExcelWorkBook.ExportAsFixedFormat(Excel.XlFixedFormatType.xlTypePDF, _saveAsPdfPath);
             }
         }
 
         public void ConvertXlsxToPdfWithAspose(string OpenedDocumentPath, string OpenedDocumentName)
         {
+            GetDefaultPdfNameForAspose(OpenedDocumentPath, OpenedDocumentName);
+
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 using (FileStream OpenedDocumentStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
@@ -44,6 +47,8 @@ namespace WordAndExcelConverter
         #region Convert Word Files To Pdf
         public void ConvertDocxToPdf(Word.Document CurrentWordDocument)
         {
+            _saveDialog.FileName = Path.GetFileNameWithoutExtension(CurrentWordDocument.Path + "\\" + CurrentWordDocument.Name) + "_PDF";
+
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 _saveAsPdfPath = _saveDialog.FileName;
@@ -53,6 +58,8 @@ namespace WordAndExcelConverter
 
         public void ConvertDocxToPdfWithAspose(string OpenedDocumentPath, string OpenedDocumentName)
         {
+            GetDefaultPdfNameForAspose(OpenedDocumentPath, OpenedDocumentName);
+
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
                 using (FileStream OpenedDocumentStream = new FileStream(OpenedDocumentPath + "\\" + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
@@ -64,5 +71,10 @@ namespace WordAndExcelConverter
             }
         }
         #endregion Convert Word Files To Pdf
+
+        private void GetDefaultPdfNameForAspose(string OpenedDocumentPath, string OpenedDocumentName)
+        {
+            _saveDialog.FileName = Path.GetFileNameWithoutExtension(OpenedDocumentPath + "\\" + OpenedDocumentName) + "_AsposePDF";
+        }
     }
 }

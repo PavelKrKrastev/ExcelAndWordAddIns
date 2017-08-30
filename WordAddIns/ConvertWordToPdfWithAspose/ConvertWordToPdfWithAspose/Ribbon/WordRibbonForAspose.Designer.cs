@@ -44,7 +44,7 @@
             // 
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
             this.tab1.Groups.Add(this.group1);
-            this.tab1.Label = "TabAddIns";
+            this.tab1.Label = "Export as PDF";
             this.tab1.Name = "tab1";
             // 
             // group1
