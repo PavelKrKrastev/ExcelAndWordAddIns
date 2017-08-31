@@ -14,9 +14,9 @@ namespace ConvertExcelToPdfWithAspose
 
         private void button1_Click(object sender, RibbonControlEventArgs e)
         {
-            Excel.Workbook _currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
+            Excel.Workbook currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
             PdfConverter XlsxToPdfAspose = new PdfConverter();
-            XlsxToPdfAspose.ConvertXlsxToPdfWithAspose(_currentWorkBook.Path, _currentWorkBook.Name);
+            XlsxToPdfAspose.ConvertXlsxToPdfWithAspose(currentWorkBook.Path, currentWorkBook.Name);
         }
     }
 }

@@ -13,9 +13,9 @@ namespace ConvertWordToPdfWithAspose
 
         private void btnConvert_Click(object sender, RibbonControlEventArgs e)
         {
-            Word.Document _currentWordDocument = Globals.ThisAddIn.Application.ActiveDocument;
+            Word.Document currentWordDocument = Globals.ThisAddIn.Application.ActiveDocument;
             PdfConverter DocToPdfAspose = new PdfConverter();
-            DocToPdfAspose.ConvertDocxToPdfWithAspose(_currentWordDocument.Path, _currentWordDocument.Name);
+            DocToPdfAspose.ConvertDocxToPdfWithAspose(currentWordDocument.Path, currentWordDocument.Name);
         }
     }
 }

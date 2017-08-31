@@ -13,9 +13,9 @@ namespace ConvertExcelToPdfStandart
 
         private void btnConvert_Click(object sender, RibbonControlEventArgs e)
         {
-            Excel.Workbook _currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
+            Excel.Workbook currentWorkBook = Globals.ThisAddIn.Application.ActiveWorkbook;
             PdfConverter XlsxToPdf = new PdfConverter();
-            XlsxToPdf.ConvertXlsxToPdf(_currentWorkBook);
+            XlsxToPdf.ConvertXlsxToPdf(currentWorkBook);
         }
     }
 }
