@@ -41,7 +41,7 @@ namespace WordAndExcelConverter
                 using (FileStream OpenedDocumentStream = new FileStream(OpenedDocumentPath + Path.DirectorySeparatorChar + OpenedDocumentName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                 {
                     Cells.Workbook AsposeWorkbook = new Cells.Workbook(OpenedDocumentStream);
-                    Cells.PdfSaveOptions SaveOptions = new Cells.PdfSaveOptions(Aspose.Cells.SaveFormat.Pdf);
+                    Cells.PdfSaveOptions SaveOptions = new Cells.PdfSaveOptions();
                     SaveOptions.AllColumnsInOnePagePerSheet = true;
                     _saveAsPdfPath = _saveDialog.FileName;
                     AsposeWorkbook.Save(_saveAsPdfPath, SaveOptions);
