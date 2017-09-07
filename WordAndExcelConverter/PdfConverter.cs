@@ -52,7 +52,7 @@ namespace WordAndExcelConverter
         #region Convert Word Files To Pdf
         public void ConvertDocxToPdf(Word.Document CurrentWordDocument)
         {
-            GetDefaultPdfName(CurrentWordDocument.Path, CurrentWordDocument.Path);
+            GetDefaultPdfName(CurrentWordDocument.Path, CurrentWordDocument.Name);
 
             if (_saveDialog.ShowDialog() == DialogResult.OK)
             {
